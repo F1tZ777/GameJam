@@ -474,6 +474,7 @@ MonoBehaviour:
   warningHole1: {fileID: 21300000, guid: 74d25953975f917428554cffdce1717d, type: 3}
   warningHole2: {fileID: 21300000, guid: 394e90d3b5b29064da07555c8aa32f81, type: 3}
   emu: {fileID: 5090436652293599556}
+  warning: 0
 --- !u!1 &8105275898235662554
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,3 +623,4 @@ MonoBehaviour:
   warningHole1: {fileID: 21300000, guid: 74d25953975f917428554cffdce1717d, type: 3}
   warningHole2: {fileID: 21300000, guid: 394e90d3b5b29064da07555c8aa32f81, type: 3}
   emu: {fileID: 5090436652293599556}
+  warning: 0
