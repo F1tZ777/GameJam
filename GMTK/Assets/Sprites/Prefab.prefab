@@ -277,6 +277,7 @@ MonoBehaviour:
   emu: {fileID: 21300000, guid: 357430a205efb9e438f4f85f2c91da22, type: 3}
   emuHit: {fileID: 21300000, guid: 57ce276885b117444bc32e018c3c22f6, type: 3}
   hole: {fileID: 5224396958627129038}
+  gameManager: {fileID: 0}
   appear: 0
   hit: 0
   FloatingTextPrefab: {fileID: 0}

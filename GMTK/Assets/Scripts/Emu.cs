@@ -13,8 +13,11 @@ public class Emu : MonoBehaviour
     Hole holeMechanics;
     [SerializeField] GameObject hole;
 
+    [SerializeField] private GameManager gameManager;
+
     public bool appear = false;
     public bool hit = false;
+    private float scoreBuffer = 1f;
     private SpriteRenderer spriteRenderer;
     private float animationTimeUp = 0.3f;
     private float animationTimeDown = 0.1f;
@@ -36,11 +39,12 @@ public class Emu : MonoBehaviour
         if (appear) 
         {
             LeanTween.moveLocalY(gameObject, 0.17f, animationTimeUp);
-            
+            StartCoroutine(AddScore());
         }
 
         else if (!appear)
         {
+            StopCoroutine(AddScore());
             LeanTween.moveLocalY(gameObject, -0.52f, animationTimeDown);
         }
 
@@ -50,6 +54,7 @@ public class Emu : MonoBehaviour
     {
         if (holeMechanics.warning)
         {
+            StopCoroutine(AddScore());
             //Debug.Log("Death is running");
             yield return new WaitForSeconds(duration);
             if (appear)
@@ -59,9 +64,22 @@ public class Emu : MonoBehaviour
                 transform.localPosition = startPos;
                 hit = false;
                 appear = false;
+                gameManager.lives -= 1;
+                gameManager.score -= 30f;
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = emu;
             }
         }
+    }
+
+    public IEnumerator AddScore()
+    {
+        yield return new WaitForSeconds(scoreBuffer);
+        gameManager.score += 1f * Time.fixedDeltaTime;
+    }
+
+    public void StopGame()
+    {
+        StopAllCoroutines();
     }
 
     /*private void Show()
@@ -121,6 +139,5 @@ public class Emu : MonoBehaviour
     {
         ShowHide();
         holeMechanics.Warning();
-        //Debug.Log(appear);
     }
 }
