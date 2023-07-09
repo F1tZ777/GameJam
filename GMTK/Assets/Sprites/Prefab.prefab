@@ -175,8 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 088979e94e2ed514a8261764732f580b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hole1: {fileID: 0}
-  hole2: {fileID: 0}
+  hole: {fileID: 5224396958627129038}
 --- !u!1 &5090436652293599556
 GameObject:
   m_ObjectHideFlags: 0

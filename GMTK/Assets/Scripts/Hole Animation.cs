@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class HoleAnimation : MonoBehaviour
 {
-    [SerializeField] private GameObject hole1;
-    [SerializeField] private GameObject hole2;
+    [SerializeField] private GameObject hole;
     private float animationtime = 0.3f;
     // Start is called before the first frame update
     void Start()
