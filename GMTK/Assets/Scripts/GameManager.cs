@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<Emu> emus;
-    [SerializeField] private static TMPro.TextMeshProUGUI timeText;
-    [SerializeField] private static TMPro.TextMeshProUGUI scoreText;
+    [SerializeField] private TMPro.TextMeshProUGUI timeText;
+    [SerializeField] private TMPro.TextMeshProUGUI scoreText;
 
     private float startingTime = 60f;
 
@@ -60,5 +60,6 @@ public class GameManager : MonoBehaviour
         }
         timeText.text = $"{(int)timeRemaining}";
         scoreText.text = $"{(int)score}";
+        CentralScoreScript.finalScore = $"{(int)score}";
     }
 }

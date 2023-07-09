@@ -283,6 +283,7 @@ MonoBehaviour:
   soundown: 0
   soundup: 0
   points: 0
+  pointincrease: 0
   FloatingTextPrefab: {fileID: 0}
   gothit: {fileID: 0}
   gainpoints: {fileID: 0}
