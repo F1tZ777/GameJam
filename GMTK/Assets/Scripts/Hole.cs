@@ -5,57 +5,37 @@ using UnityEngine;
 public class Hole : MonoBehaviour
 {
     [Header("Graphics")]
-    [SerializeField] private Sprite hole;
-    [SerializeField] private Sprite warningHole;
+    [SerializeField] private Sprite hole1;
+    [SerializeField] private Sprite hole2;
+    [SerializeField] private Sprite warningHole1;
+    [SerializeField] private Sprite warningHole2;
 
     Emu emuMechanics;
     [SerializeField] GameObject emu;
 
-    //private float duration = 1.5f;
-    public bool warning = false;
+    private float duration = 1.5f;
+    private bool warning = false;
     private float warningRate = 1f;
-    private float random = 0f;
+
+    public enum HoleType { Normal, Warning };
+    private HoleType holeType;
 
     private void OnMouseDown()
     {
         if (!emuMechanics.appear)
         {
             emuMechanics.appear = true;
+            if (warning)
+            {
+                warning = false;
+                holeType = HoleType.Normal;
+            }
             //Show(startPos, endPos);
         }
         else
         {
             emuMechanics.appear = false;
             //Hide(startPos, endPos);
-        }
-    }
-
-    public void Warning()
-    {
-        if (emuMechanics.appear)
-        {
-            if (!warning)
-            {
-                if (random <= warningRate)
-                {
-                    warning = true;
-                    StartCoroutine(emuMechanics.Death());
-                }
-            }
-            /*else if (warning)
-            {
-                holeType = HoleType.Warning;
-
-                yield return new WaitForSeconds(duration);
-                emuMechanics.hit = true;
-                emuMechanics.Death();
-            }*/
-        }
-
-        if (!emuMechanics.appear)
-        {
-            warning = false;
-            StopCoroutine(emuMechanics.Death());
         }
     }
     void Awake()
@@ -66,19 +46,6 @@ public class Hole : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Warning();
-        random = Random.Range(0f, 1000f);
-        //Debug.Log(random);
-        //Debug.Log(warning);
-        Debug.Log(emuMechanics.appear);
-
-        if (warning)
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = warningHole;
-        }
-        else
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = hole;
-        }
+        
     }
 }
