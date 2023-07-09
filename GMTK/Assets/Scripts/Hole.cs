@@ -42,7 +42,7 @@ public class Hole : MonoBehaviour
                 if (random <= warningRate)
                 {
                     warning = true;
-    /*                StartCoroutine(emuMechanics.Death());*/
+                    StartCoroutine(emuMechanics.Death());
                 }
             }
             /*else if (warning)
@@ -58,7 +58,7 @@ public class Hole : MonoBehaviour
         if (!emuMechanics.appear)
         {
             warning = false;
-       /*     StopCoroutine(emuMechanics.Death());*/
+            StopCoroutine(emuMechanics.Death());
         }
     }
     void Awake()
