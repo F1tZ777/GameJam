@@ -16,6 +16,8 @@ public class Emu : MonoBehaviour
     public bool appear = false;
     public bool hit = false;
     private SpriteRenderer spriteRenderer;
+    private float animationTimeUp = 0.3f;
+    private float animationTimeDown = 0.1f;
     void Awake()
     {
         holeMechanics = hole.GetComponent<Hole>();
@@ -32,12 +34,12 @@ public class Emu : MonoBehaviour
     {
         if (appear) 
         {
-            transform.localPosition = endPos;
+            LeanTween.moveLocalY(gameObject, 0.17f, animationTimeUp);
         }
 
         else if (!appear)
         {
-            transform.localPosition = startPos;
+            LeanTween.moveLocalY(gameObject, -0.52f, animationTimeDown);
         }
     }
     /*private void Show()
