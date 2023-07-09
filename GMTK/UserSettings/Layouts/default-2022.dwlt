@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1519.2001
     height: 758.4
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Project
+=======
+  m_Title: Game
+>>>>>>> parent of ca656e3 (Revert "- Got rid of the holes being two separate entities")
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -66,10 +70,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1163.2
     y: 0
+<<<<<<< HEAD
     width: 356.00012
     height: 708.4
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    width: 359.19995
+    height: 730.8
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of ca656e3 (Revert "- Got rid of the holes being two separate entities")
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -92,10 +103,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 288.8
     height: 494.4
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    width: 311.2
+    height: 510.4
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of ca656e3 (Revert "- Got rid of the holes being two separate entities")
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -337,10 +355,17 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: dc910000
     m_LastClickedID: 37340
     m_ExpandedIDs: 00000000dc91000000ca9a3bffffff7f
+=======
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 22710000
+    m_LastClickedID: 28962
+    m_ExpandedIDs: 000000000471000000ca9a3bffffff7f
+>>>>>>> parent of ca656e3 (Revert "- Got rid of the holes being two separate entities")
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -368,7 +393,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000dc91000000ca9a3bffffff7f
+=======
+    m_ExpandedIDs: 0000000004710000
+>>>>>>> parent of ca656e3 (Revert "- Got rid of the holes being two separate entities")
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -395,8 +424,13 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000566d0000847f0000c6760000ae82000098710000ee940000
+=======
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000566d0000847f0000c6760000ae820000
+>>>>>>> parent of ca656e3 (Revert "- Got rid of the holes being two separate entities")
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -508,9 +542,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 56d2fdff
       m_LastClickedID: -142762
       m_ExpandedIDs: dccafdff7605feffbc1ffeff3a24ffff
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e8faffffc46d0000
+>>>>>>> parent of ca656e3 (Revert "- Got rid of the holes being two separate entities")
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -916,9 +956,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 0.1647065, y: 0.011577187, z: -0.06897083}
     speed: 2
     m_Value: {x: 0.08059078, y: 0.0021450948, z: -0.07069951}
+=======
+    m_Target: {x: 0.5261569, y: -0.15176722, z: 0.096698254}
+    speed: 2
+    m_Value: {x: 0.5261569, y: -0.15176722, z: 0.096698254}
+>>>>>>> parent of ca656e3 (Revert "- Got rid of the holes being two separate entities")
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -968,9 +1014,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 3.668687
     speed: 2
     m_Value: 3.8415573
+=======
+    m_Target: 2.9344084
+    speed: 2
+    m_Value: 2.9344084
+>>>>>>> parent of ca656e3 (Revert "- Got rid of the holes being two separate entities")
   m_Ortho:
     m_Target: 1
     speed: 2
