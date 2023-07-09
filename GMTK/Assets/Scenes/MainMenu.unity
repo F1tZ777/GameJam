@@ -909,7 +909,6 @@ GameObject:
   - component: {fileID: 786833662}
   - component: {fileID: 786833661}
   - component: {fileID: 786833663}
-  - component: {fileID: 786833664}
   m_Layer: 0
   m_Name: Main Menu music
   m_TagString: Music
@@ -1040,19 +1039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269019baec1f064428825a287129545b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &786833664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786833660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43c0490a8f339a843b04f149fed71e5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  music: {fileID: 786833661}
 --- !u!1 &1016847727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +1993,7 @@ MonoBehaviour:
   transitiontime: 1
   UIsfx: {fileID: 1189979324}
   quitsfx: {fileID: 1016847728}
+  MainMenu: {fileID: 786833661}
 --- !u!4 &1974981455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6079962750016971869, guid: e92ced4b2d55a3847b6c46223f3184af, type: 3}

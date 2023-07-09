@@ -34,4 +34,13 @@ public class SceneManager : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(Scene.MainMenu.ToString());
     }
+
+    public void LoadVictory()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(Scene.Victory.ToString());
+    }
+    public void LoadGameOver()
+     {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(Scene.GameOver.ToString());
+    }
 }

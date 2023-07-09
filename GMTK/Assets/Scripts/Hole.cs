@@ -18,6 +18,7 @@ public class Hole : MonoBehaviour
 
     public enum HoleType { Normal, Warning };
     private HoleType holeType;
+    public AudioSource beep;
 
     private void OnMouseDown()
     {

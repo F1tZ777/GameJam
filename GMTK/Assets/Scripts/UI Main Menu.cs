@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor.Presets;
+
 public class UIMainMenu : MonoBehaviour
 {
     [SerializeField] Button _play, _tutorial, _quit;
     public Animator transition;
     public float transitiontime;
-    public AudioSource UIsfx, quitsfx;
+    public AudioSource UIsfx, quitsfx, MainMenu;
+    private bool pressed = false;
     // Start is called before the first frame update
     void Start()
     {
+        pressed = false;
         _play.onClick.AddListener(NewGame);
         _tutorial.onClick.AddListener(Tutorial);
         _quit.onClick.AddListener(Exit); 
@@ -34,7 +38,11 @@ public class UIMainMenu : MonoBehaviour
 
     IEnumerator game()
     {
-        UIsfx.Play();
+        if (!pressed)
+        {
+            UIsfx.Play();
+            pressed = true;
+        }
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitiontime);
         SceneManager.Instance.LoadGame();
@@ -42,7 +50,11 @@ public class UIMainMenu : MonoBehaviour
 
     IEnumerator tutorial()
     {
-        UIsfx.Play();
+        if (!pressed)
+        {
+            UIsfx.Play();
+            pressed = true;
+        }
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitiontime);
         SceneManager.Instance.LoadTutorial();
@@ -50,7 +62,11 @@ public class UIMainMenu : MonoBehaviour
 
     IEnumerator quit()
     {
-        quitsfx.Play();
+        if (!pressed)
+        {
+            UIsfx.Play();
+            pressed = true;
+        }
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitiontime);
         Application.Quit();

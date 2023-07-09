@@ -280,7 +280,14 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   appear: 0
   hit: 0
+  soundown: 0
+  soundup: 0
+  points: 0
   FloatingTextPrefab: {fileID: 0}
+  gothit: {fileID: 0}
+  gainpoints: {fileID: 0}
+  moveup: {fileID: 0}
+  movedown: {fileID: 0}
 --- !u!61 &2006018211392055158
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -473,3 +480,4 @@ MonoBehaviour:
   warningHole: {fileID: 21300000, guid: 6c30a2ffc94e1c54b906047307ff999e, type: 3}
   emu: {fileID: 5090436652293599556}
   warning: 0
+  beep: {fileID: 0}

@@ -14,12 +14,13 @@ public class MusicClass : MonoBehaviour
 
     private void Update()
     {
-        Scene nextscene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
-        string sceneName = nextscene.name;
+        string nextscene = UnityEngine.SceneManagement.SceneManager.GetSceneByName("GameScreen").ToString();
+        string sceneName = nextscene;
 
-        if (nextscene.name == "GameScreen")
+        if(nextscene == "GameScreen")
         {
             music.Stop();
         }
+
     }
 }

@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<Emu> emus;
-    [SerializeField] private TMPro.TextMeshProUGUI timeText;
-    [SerializeField] private TMPro.TextMeshProUGUI scoreText;
+    [SerializeField] private static TMPro.TextMeshProUGUI timeText;
+    [SerializeField] private static TMPro.TextMeshProUGUI scoreText;
 
     private float startingTime = 60f;
 
@@ -49,12 +51,12 @@ public class GameManager : MonoBehaviour
         if (timeRemaining <= 0 )
         {
             timeRemaining = 0;
-            GameOver();
+            SceneManager.Instance.LoadVictory();
         }
         if (lives <= 0)
         {
             timeRemaining = 0;
-            GameOver();
+            SceneManager.Instance.LoadGameOver();
         }
         timeText.text = $"{(int)timeRemaining}";
         scoreText.text = $"{(int)score}";
