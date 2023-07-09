@@ -22,7 +22,7 @@ public class Emu : MonoBehaviour
     }
 
     // Emu movement
-    private Vector2 startPos = new Vector2(-0.49f, -0.52f);
+    private Vector2 startPos = new Vector2(-0.49f, -0.64f);
     private Vector2 endPos = new Vector2(-0.49f, 0.17f);
 
     private float showDuration = 0.5f;
@@ -38,6 +38,24 @@ public class Emu : MonoBehaviour
         else if (!appear)
         {
             transform.localPosition = startPos;
+        }
+    }
+
+    public IEnumerator Death()
+    {
+        if (holeMechanics.warning)
+        {
+            //Debug.Log("Death is running");
+            yield return new WaitForSeconds(duration);
+            if (appear)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = emuHit;
+                yield return new WaitForSeconds(2f);
+                transform.localPosition = startPos;
+                hit = false;
+                appear = false;
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = emu;
+            }
         }
     }
     /*private void Show()
@@ -96,6 +114,7 @@ public class Emu : MonoBehaviour
     void Update()
     {
         ShowHide();
+        holeMechanics.Warning();
         //Debug.Log(appear);
     }
 }
