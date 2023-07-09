@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 214701359}
   - component: {fileID: 214701361}
   - component: {fileID: 214701360}
+  - component: {fileID: 214701362}
   m_Layer: 0
   m_Name: Empty Hole
   m_TagString: Untagged
@@ -467,6 +468,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &214701362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214701358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 894171850}
 --- !u!1 &242900107
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +594,7 @@ GameObject:
   - component: {fileID: 281723107}
   - component: {fileID: 281723108}
   - component: {fileID: 281723109}
+  - component: {fileID: 281723110}
   m_Layer: 0
   m_Name: Empty Hole
   m_TagString: Untagged
@@ -695,6 +714,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &281723110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281723106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 1314623585}
 --- !u!1 &347077062
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +742,7 @@ GameObject:
   - component: {fileID: 347077063}
   - component: {fileID: 347077065}
   - component: {fileID: 347077064}
+  - component: {fileID: 347077066}
   m_Layer: 0
   m_Name: Empty Hole 2
   m_TagString: Untagged
@@ -825,6 +862,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &347077066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347077062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 730139130}
 --- !u!1 &409967492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,6 +1240,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f985224ba25e242acad1ca90ceee05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emu: {fileID: 21300000, guid: 146a21301eabda34b8a4cd023a6c4016, type: 3}
+  emuHit: {fileID: 21300000, guid: 0ccf8a0fc7660de45843d1df9b2a315a, type: 3}
+  hole: {fileID: 1215925878}
+  appear: 0
+  hit: 0
 --- !u!212 &597073992
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1360,6 +1419,7 @@ GameObject:
   - component: {fileID: 674341893}
   - component: {fileID: 674341895}
   - component: {fileID: 674341894}
+  - component: {fileID: 674341896}
   m_Layer: 0
   m_Name: Empty Hole
   m_TagString: Untagged
@@ -1479,6 +1539,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &674341896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674341892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 1957808419}
 --- !u!1 &675265433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,6 +1567,7 @@ GameObject:
   - component: {fileID: 675265434}
   - component: {fileID: 675265436}
   - component: {fileID: 675265435}
+  - component: {fileID: 675265437}
   m_Layer: 0
   m_Name: Empty Hole 2
   m_TagString: Untagged
@@ -1609,6 +1687,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &675265437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675265433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 597073989}
 --- !u!1 &701434909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,6 +1715,7 @@ GameObject:
   - component: {fileID: 701434910}
   - component: {fileID: 701434912}
   - component: {fileID: 701434911}
+  - component: {fileID: 701434913}
   m_Layer: 0
   m_Name: Empty Hole 2
   m_TagString: Untagged
@@ -1739,6 +1835,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &701434913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701434909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 894171850}
 --- !u!1 &721528772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,6 +1980,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f985224ba25e242acad1ca90ceee05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emu: {fileID: 21300000, guid: 146a21301eabda34b8a4cd023a6c4016, type: 3}
+  emuHit: {fileID: 21300000, guid: 0ccf8a0fc7660de45843d1df9b2a315a, type: 3}
+  hole: {fileID: 1079333304}
+  appear: 0
+  hit: 0
 --- !u!212 &722599734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1930,6 +2048,7 @@ GameObject:
   - component: {fileID: 724797866}
   - component: {fileID: 724797868}
   - component: {fileID: 724797867}
+  - component: {fileID: 724797869}
   m_Layer: 0
   m_Name: Empty Hole 2
   m_TagString: Untagged
@@ -2049,6 +2168,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &724797869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724797865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 1957808419}
 --- !u!1 &730139130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2094,6 +2230,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f985224ba25e242acad1ca90ceee05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emu: {fileID: 21300000, guid: 146a21301eabda34b8a4cd023a6c4016, type: 3}
+  emuHit: {fileID: 21300000, guid: 0ccf8a0fc7660de45843d1df9b2a315a, type: 3}
+  hole: {fileID: 2128138621}
+  appear: 0
+  hit: 0
 --- !u!212 &730139133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2191,6 +2332,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f985224ba25e242acad1ca90ceee05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emu: {fileID: 21300000, guid: 146a21301eabda34b8a4cd023a6c4016, type: 3}
+  emuHit: {fileID: 21300000, guid: 0ccf8a0fc7660de45843d1df9b2a315a, type: 3}
+  hole: {fileID: 1350233813}
+  appear: 0
+  hit: 0
 --- !u!212 &730421840
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2550,6 +2696,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f985224ba25e242acad1ca90ceee05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emu: {fileID: 21300000, guid: 146a21301eabda34b8a4cd023a6c4016, type: 3}
+  emuHit: {fileID: 21300000, guid: 0ccf8a0fc7660de45843d1df9b2a315a, type: 3}
+  hole: {fileID: 214701358}
+  appear: 0
+  hit: 0
 --- !u!212 &894171853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2661,6 +2812,7 @@ GameObject:
   - component: {fileID: 978804801}
   - component: {fileID: 978804803}
   - component: {fileID: 978804802}
+  - component: {fileID: 978804804}
   m_Layer: 0
   m_Name: Empty Hole 2
   m_TagString: Untagged
@@ -2780,6 +2932,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &978804804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978804800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 722599731}
 --- !u!1 &991731594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,6 +3008,7 @@ GameObject:
   - component: {fileID: 1079333305}
   - component: {fileID: 1079333307}
   - component: {fileID: 1079333306}
+  - component: {fileID: 1079333308}
   m_Layer: 0
   m_Name: Empty Hole
   m_TagString: Untagged
@@ -2958,6 +3128,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1079333308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079333304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 722599731}
 --- !u!1 &1135581006
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,6 +3204,7 @@ GameObject:
   - component: {fileID: 1215925879}
   - component: {fileID: 1215925881}
   - component: {fileID: 1215925880}
+  - component: {fileID: 1215925882}
   m_Layer: 0
   m_Name: Empty Hole
   m_TagString: Untagged
@@ -3136,6 +3324,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1215925882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215925878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 597073989}
 --- !u!1 &1254697234
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,6 +3386,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f985224ba25e242acad1ca90ceee05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emu: {fileID: 21300000, guid: 146a21301eabda34b8a4cd023a6c4016, type: 3}
+  emuHit: {fileID: 21300000, guid: 0ccf8a0fc7660de45843d1df9b2a315a, type: 3}
+  hole: {fileID: 1306069091}
+  appear: 0
+  hit: 0
 --- !u!212 &1254697237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3278,6 +3488,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f985224ba25e242acad1ca90ceee05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emu: {fileID: 21300000, guid: 146a21301eabda34b8a4cd023a6c4016, type: 3}
+  emuHit: {fileID: 21300000, guid: 0ccf8a0fc7660de45843d1df9b2a315a, type: 3}
+  hole: {fileID: 1671596963}
+  appear: 0
+  hit: 0
 --- !u!212 &1257589373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3417,6 +3632,7 @@ GameObject:
   - component: {fileID: 1306069092}
   - component: {fileID: 1306069094}
   - component: {fileID: 1306069093}
+  - component: {fileID: 1306069095}
   m_Layer: 0
   m_Name: Empty Hole
   m_TagString: Untagged
@@ -3536,6 +3752,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1306069095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306069091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 1254697234}
 --- !u!1 &1314623585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3547,6 +3780,7 @@ GameObject:
   - component: {fileID: 1314623586}
   - component: {fileID: 1314623587}
   - component: {fileID: 1314623588}
+  - component: {fileID: 1314623589}
   m_Layer: 0
   m_Name: EMU
   m_TagString: Untagged
@@ -3633,6 +3867,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f985224ba25e242acad1ca90ceee05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emu: {fileID: 21300000, guid: 146a21301eabda34b8a4cd023a6c4016, type: 3}
+  emuHit: {fileID: 21300000, guid: 0ccf8a0fc7660de45843d1df9b2a315a, type: 3}
+  hole: {fileID: 281723106}
+  appear: 0
+  hit: 0
+--- !u!61 &1314623589
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314623585}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1 &1350233813
 GameObject:
   m_ObjectHideFlags: 0
@@ -3644,6 +3928,7 @@ GameObject:
   - component: {fileID: 1350233814}
   - component: {fileID: 1350233816}
   - component: {fileID: 1350233815}
+  - component: {fileID: 1350233817}
   m_Layer: 0
   m_Name: Empty Hole
   m_TagString: Untagged
@@ -3763,6 +4048,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1350233817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350233813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 730421837}
 --- !u!1 &1370407360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4040,6 +4342,7 @@ GameObject:
   - component: {fileID: 1470217503}
   - component: {fileID: 1470217504}
   - component: {fileID: 1470217505}
+  - component: {fileID: 1470217506}
   m_Layer: 0
   m_Name: Empty Hole 2
   m_TagString: Untagged
@@ -4159,6 +4462,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &1470217506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470217502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 1314623585}
 --- !u!1 &1532697877
 GameObject:
   m_ObjectHideFlags: 0
@@ -4170,6 +4490,7 @@ GameObject:
   - component: {fileID: 1532697878}
   - component: {fileID: 1532697880}
   - component: {fileID: 1532697879}
+  - component: {fileID: 1532697881}
   m_Layer: 0
   m_Name: Empty Hole 2
   m_TagString: Untagged
@@ -4289,6 +4610,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1532697881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532697877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 1254697234}
 --- !u!1 &1617663220
 GameObject:
   m_ObjectHideFlags: 0
@@ -4300,6 +4638,7 @@ GameObject:
   - component: {fileID: 1617663221}
   - component: {fileID: 1617663223}
   - component: {fileID: 1617663222}
+  - component: {fileID: 1617663224}
   m_Layer: 0
   m_Name: Empty Hole 2
   m_TagString: Untagged
@@ -4419,6 +4758,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1617663224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617663220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 1257589370}
 --- !u!1 &1671596963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,6 +4786,7 @@ GameObject:
   - component: {fileID: 1671596964}
   - component: {fileID: 1671596966}
   - component: {fileID: 1671596965}
+  - component: {fileID: 1671596967}
   m_Layer: 0
   m_Name: Empty Hole
   m_TagString: Untagged
@@ -4549,6 +4906,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1671596967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671596963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 1257589370}
 --- !u!1 &1730202367
 GameObject:
   m_ObjectHideFlags: 0
@@ -4843,6 +5217,7 @@ GameObject:
   - component: {fileID: 1949723535}
   - component: {fileID: 1949723537}
   - component: {fileID: 1949723536}
+  - component: {fileID: 1949723538}
   m_Layer: 0
   m_Name: Empty Hole 2
   m_TagString: Untagged
@@ -4962,6 +5337,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1949723538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949723534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 730421837}
 --- !u!1 &1955166247
 GameObject:
   m_ObjectHideFlags: 0
@@ -5090,6 +5482,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f985224ba25e242acad1ca90ceee05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emu: {fileID: 21300000, guid: 146a21301eabda34b8a4cd023a6c4016, type: 3}
+  emuHit: {fileID: 21300000, guid: 0ccf8a0fc7660de45843d1df9b2a315a, type: 3}
+  hole: {fileID: 674341892}
+  appear: 0
+  hit: 0
 --- !u!212 &1957808422
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5236,6 +5633,7 @@ GameObject:
   - component: {fileID: 2128138622}
   - component: {fileID: 2128138624}
   - component: {fileID: 2128138623}
+  - component: {fileID: 2128138625}
   m_Layer: 0
   m_Name: Empty Hole
   m_TagString: Untagged
@@ -5355,3 +5753,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2128138625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128138621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80add4ffebc783f44b9ff145e0995e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hole1: {fileID: 21300000, guid: 469f4ce9c8b455c4ca07e0453756ce91, type: 3}
+  hole2: {fileID: 21300000, guid: 481442a66751e67459242702da2ca33c, type: 3}
+  warningHole1: {fileID: 21300000, guid: 554e69684069f574cad370753acf6ee9, type: 3}
+  warningHole2: {fileID: 21300000, guid: 7ddb68df6ce881d49995294cea0bf8fc, type: 3}
+  emu: {fileID: 730139130}
