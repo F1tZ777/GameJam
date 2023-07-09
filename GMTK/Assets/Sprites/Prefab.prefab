@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4246914766298466595}
   - component: {fileID: 308736276197136992}
   m_Layer: 0
-  m_Name: EmuHole
+  m_Name: Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,6 +281,7 @@ MonoBehaviour:
   hole: {fileID: 8105275898235662554}
   appear: 0
   hit: 0
+  FloatingTextPrefab: {fileID: 0}
 --- !u!61 &2006018211392055158
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ public class Emu : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private float animationTimeUp = 0.3f;
     private float animationTimeDown = 0.1f;
+    public GameObject FloatingTextPrefab;
     void Awake()
     {
         holeMechanics = hole.GetComponent<Hole>();
@@ -35,12 +36,14 @@ public class Emu : MonoBehaviour
         if (appear) 
         {
             LeanTween.moveLocalY(gameObject, 0.17f, animationTimeUp);
+            
         }
 
         else if (!appear)
         {
             LeanTween.moveLocalY(gameObject, -0.52f, animationTimeDown);
         }
+
     }
     /*private void Show()
     {

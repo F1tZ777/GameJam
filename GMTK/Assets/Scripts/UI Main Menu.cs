@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class UIMainMenu : MonoBehaviour
 {
     [SerializeField] Button _play, _tutorial, _quit;
+    public Animator transition;
+    public float transitiontime;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +18,7 @@ public class UIMainMenu : MonoBehaviour
 
     private void NewGame()
     {
-        SceneManager.Instance.LoadGame();
+        StartCoroutine(Loadgame());
     }
     
     private void Tutorial()
@@ -26,5 +29,12 @@ public class UIMainMenu : MonoBehaviour
     private void Exit()
     {
         Application.Quit();
+    }
+
+    IEnumerator Loadgame()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitiontime);
+        SceneManager.Instance.LoadGame();
     }
 }
