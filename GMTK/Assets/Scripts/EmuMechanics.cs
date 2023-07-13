@@ -31,7 +31,7 @@ public class EmuMechanics : MonoBehaviour
     private Vector2 endPos = Vector2.zero;
 
     private float showDuration = 0.5f;
-    private float duration = 1.5f;
+    private float duration = 2f;
 
     
     private IEnumerator Show(Vector2 start, Vector2 end)
@@ -130,6 +130,7 @@ public class EmuMechanics : MonoBehaviour
             hit = false;
             warning = false;
             appear = false;
+            
         }
     }
      

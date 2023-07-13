@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Hole : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class Hole : MonoBehaviour
 
     //private float duration = 2f;
     public bool warning = false;
+    public bool flash = false;
     private float warningRate = 1f;
     private float random = 0f;
 
@@ -25,10 +28,11 @@ public class Hole : MonoBehaviour
         if (!emuMechanics.appear)
         {
             emuMechanics.appear = true;
-            //Show(startPos, endPos);
+            //Show(startPos, endPos
         }
         else
         {
+            gameObject.GetComponent<Collider2D>().enabled = true;
             emuMechanics.appear = false;
             //Hide(startPos, endPos);
         }
@@ -43,6 +47,7 @@ public class Hole : MonoBehaviour
                 if (random <= warningRate)
                 {
                     warning = true;
+                    playwarningsound();
                     StartCoroutine(emuMechanics.Death());
                 }
             }
@@ -59,9 +64,22 @@ public class Hole : MonoBehaviour
         if (!emuMechanics.appear)
         {
             warning = false;
-            StopCoroutine(emuMechanics.Death());
+            gameObject.GetComponent<Collider2D>().enabled = true;
         }
     }
+
+        public void playwarningsound()
+        {
+            StartCoroutine(warningsound());
+        }
+
+         IEnumerator warningsound()
+         {
+            beep.Play();
+            yield return new WaitForSeconds(beep.clip.length + 0.3f);
+            gameObject.GetComponent<Collider2D>().enabled = false;
+         }
+
     void Awake()
     {
         emuMechanics = emu.GetComponent<Emu>();
@@ -74,7 +92,7 @@ public class Hole : MonoBehaviour
         random = Random.Range(0f, 1000f);
         //Debug.Log(random);
         //Debug.Log(warning);
-        Debug.Log(emuMechanics.appear);
+        /*Debug.Log(emuMechanics.appear);*/
 
         if (warning)
         {
@@ -84,5 +102,5 @@ public class Hole : MonoBehaviour
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = hole;
         }
+      }
     }
-}

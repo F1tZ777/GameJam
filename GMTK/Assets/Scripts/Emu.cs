@@ -24,7 +24,7 @@ public class Emu : MonoBehaviour
     public bool pointincrease = false;
     private float scoreBuffer = 1f;
     private SpriteRenderer spriteRenderer;
-    private float animationTimeUp = 0.3f;
+    private float animationTimeUp = 0.2f;
     private float animationTimeDown = 0.1f;
     public GameObject FloatingTextPrefab;
     public AudioSource gothit, gainpoints, moveup, movedown;
@@ -49,16 +49,16 @@ public class Emu : MonoBehaviour
             StartCoroutine(AddScore());
             if (!soundup )
             {
+                soundown = false;
                 moveup.Play();
                 soundup = true;
-                soundown = false;
             }
         }
 
         else if (!appear)
         {
             StopCoroutine(AddScore());
-            LeanTween.moveLocalY(gameObject, -0.52f, animationTimeDown);
+            LeanTween.moveLocalY(gameObject, -0.64f, animationTimeDown);
             if (!soundown)
             {
                 movedown.Play();
@@ -75,28 +75,29 @@ public class Emu : MonoBehaviour
         if (holeMechanics.warning)
         {
             StopCoroutine(AddScore());
-            //Debug.Log("Death is running");
+            //Debug.Log("Death is running);
             yield return new WaitForSeconds(duration);
-            if (appear)
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = emuHit;
-                yield return new WaitForSeconds(0.1f);
-                gothit.Play();
-                transform.localPosition = startPos;
-                hit = false;
-                appear = false;
-                gameManager.lives -= 1;
-                gameManager.score -= 30f;
-                yield return new WaitForSeconds(0.4f);
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = emu;
-            }
+                if (appear)
+                {
+                    gothit.Play();
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = emuHit;
+                    yield return new WaitForSeconds(0.5f);
+                    transform.localPosition = startPos;
+                    hit = false;
+                    appear = false;
+                    gameManager.lives -= 1;
+                    gameManager.score -= 30f;
+                    yield return new WaitForSeconds(0.4f);
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = emu;
+                    hole.GetComponent<Collider2D>().enabled = true;
+                }
+            hole.GetComponent<Collider2D>().enabled = true;
         }
     }
 
     public IEnumerator AddScore()
     {
         yield return new WaitForSeconds(scoreBuffer);
-        gainpoints.Play();
         gameManager.score += 1f * Time.fixedDeltaTime;
     }
 
@@ -154,11 +155,12 @@ public class Emu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        soundown = true;
         transform.localPosition = startPos;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         ShowHide();
 

@@ -45,6 +45,7 @@ public class UIMainMenu : MonoBehaviour
         }
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitiontime);
+        DontDestroyMusic.instance.GetComponent<AudioSource>().Stop();
         SceneManager.Instance.LoadGame();
     }
 

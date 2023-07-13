@@ -5,15 +5,18 @@ using UnityEngine;
 public class DontDestroyMusic : MonoBehaviour
 {
     // Start is called before the first frame update
-    private void Awake()
-    {
-        GameObject[] musicobject = GameObject.FindGameObjectsWithTag("Music");
+    public static DontDestroyMusic instance;
 
-        if (musicobject.Length > 1)
+    void Awake()
+    {
+        if (instance != null)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         else
+        {
+            instance = this;
             DontDestroyOnLoad(this.gameObject);
+        }
     }
 }

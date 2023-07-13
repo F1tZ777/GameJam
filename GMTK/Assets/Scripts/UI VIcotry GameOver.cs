@@ -26,6 +26,7 @@ public class UIVIcotryGameOver : MonoBehaviour
         UIsfx.Play();
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitiontime);
+        DontDestroyMusic.instance.GetComponent<AudioSource>().Play();
         SceneManager.Instance.LoadMainMenu();
     }
 
